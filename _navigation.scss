@@ -1,0 +1,22 @@
+.navigation {
+  .header {
+    .logo {
+      color: rgb(113, 183, 8);
+    }
+    .iconmenu {
+      width: 32px;
+      display: none;
+    }
+    .menu a {
+      padding: 10px;
+      text-decoration: none;
+      color: black;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .iconmenu {
+      display: block;
+    }
+  }
+}

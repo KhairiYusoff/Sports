@@ -19,16 +19,10 @@ body {
   align-items: center;
 }
 
-.header .logo {
-  color: rgb(113, 183, 8);
-}
-.header .menu a {
-  padding: 10px;
-  text-decoration: none;
-  color: black;
-}
-
-h1, h2, h2, h4 {
+h1,
+h2,
+h2,
+h4 {
   margin: 0;
 }
 
@@ -109,4 +103,22 @@ p {
 }
 .special-box .special-pro {
   background-color: rgb(248, 244, 244);
+}
+
+.navigation .header .logo {
+  color: rgb(113, 183, 8);
+}
+.navigation .header .iconmenu {
+  width: 32px;
+  display: none;
+}
+.navigation .header .menu a {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+@media screen and (max-width: 800px) {
+  .navigation .iconmenu {
+    display: block;
+  }
 }/*# sourceMappingURL=style.css.map */
