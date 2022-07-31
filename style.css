@@ -105,6 +105,9 @@ p {
   background-color: rgb(248, 244, 244);
 }
 
+.navigation {
+  position: relative;
+}
 .navigation .header .logo {
   color: rgb(113, 183, 8);
 }
@@ -121,4 +124,33 @@ p {
   .navigation .iconmenu {
     display: block;
   }
+  .navigation .menu {
+    display: none;
+    position: static;
+  }
+  .navigation .menu a {
+    display: inline;
+    background: none;
+  }
+  .navigation .login {
+    display: none;
+  }
+  .navigation #menuon:checked ~ .menu {
+    display: block;
+    position: absolute;
+    top: 90px;
+    width: 90%;
+    background-color: white;
+  }
+  .navigation #menuon:checked ~ .menu a {
+    display: block;
+    color: black;
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+  }
+}
+
+#menuon {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

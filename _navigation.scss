@@ -1,4 +1,5 @@
 .navigation {
+  position: relative;
   .header {
     .logo {
       color: rgb(113, 183, 8);
@@ -18,5 +19,34 @@
     .iconmenu {
       display: block;
     }
+    .menu {
+      display: none;
+      position: static;
+      a {
+        display: inline;
+        background: none;
+      }
+    }
+    .login {
+      display: none;
+    }
+    #menuon:checked ~ .menu {
+      display: block;
+      position: absolute;
+      top: 90px;
+      width: 90%;
+      background-color: white;
+      a {
+        display: block;
+        color: black;
+        padding: 10px;
+        box-sizing: border-box;
+        border-bottom: 1px solid black;
+      }
+    }
   }
+}
+
+#menuon {
+  display: none;
 }
