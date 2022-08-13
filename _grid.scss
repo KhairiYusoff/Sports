@@ -108,10 +108,24 @@ p {
 }
 
 @media screen and (max-width: 800px) {
-  .services {
-    .description {
-      width: 50%;
-      background-color: bisque;
+  .container {
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      .description {
+        width: 40%;
+      }
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      .description {
+        width: 100%;
+      }
+      .image {
+        width: 100%;
+      }
     }
   }
 }

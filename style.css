@@ -106,9 +106,22 @@ p {
 }
 
 @media screen and (max-width: 800px) {
-  .services .description {
-    width: 50%;
-    background-color: bisque;
+  .container .services {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container .services .description {
+    width: 40%;
+  }
+  .container .hero {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container .hero .description {
+    width: 100%;
+  }
+  .container .hero .image {
+    width: 100%;
   }
 }
 .navigation {
@@ -121,15 +134,17 @@ p {
   width: 32px;
   display: none;
 }
+@media screen and (max-width: 800px) {
+  .navigation .header .iconmenu {
+    display: block;
+  }
+}
 .navigation .header .menu a {
   padding: 10px;
   text-decoration: none;
   color: black;
 }
 @media screen and (max-width: 800px) {
-  .navigation .iconmenu {
-    display: block;
-  }
   .navigation .menu {
     display: none;
     position: static;

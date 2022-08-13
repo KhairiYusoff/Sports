@@ -7,6 +7,9 @@
     .iconmenu {
       width: 32px;
       display: none;
+      @media screen and (max-width: 800px) {
+        display: block;
+      }
     }
     .menu a {
       padding: 10px;
@@ -16,9 +19,6 @@
   }
 
   @media screen and (max-width: 800px) {
-    .iconmenu {
-      display: block;
-    }
     .menu {
       display: none;
       position: static;
